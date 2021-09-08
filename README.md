@@ -4,6 +4,9 @@ This project seeks to build and implement a Movie Recommendation Engine from the
 ## Problem Statement
 Recommendation systems are crucial to the services we use on the internet every day. I wanted to create a system of my own to create a system to find solutions to the problems these systems run into today.
 
+## Requirements
+Python, Pandas, Numpy, Tensorflow, Keras, Streamlit, Sklearn
+
 ## Summary of Project
 The project was primarily about developing a good model and implementing the model on a Streamlit app. The data itself was relatively straight forward, it consisted of one-million user reviews of movies, 6400 unique movies, and 3883 unique users. The ratings are on a scale of 1-5 with 5 meaning the user enjoyed the movie. The main issue with the data was that not every movie was accounted for as a rating. To compensate for this I created a fake user to apply the average rating to the movies that had not been represented. This allowed the model to work more comprehensively with the data, but ultimately was not absolutely necessary. The issue it rose  was during the joining of our data frames, another solution would be to use a different type of join.
 Modeling was done in two-parts. First a content based model was created by judging the cosine similarity of genres, after turning genres into Tf-IDF vectors. This could be considered overkill but it did give our content model more robust capabilities because if we added new movies of genres that haven't yet been accounted for, our model would not break. There was another 'soft' model that was applied, which was a system facing content filter. It involved ranking every movie in order of popularity as to do two things, 1) it prevented from only feeding popular movies to the user, 2) it broke up the size of arrays we would feed to our collaborative model. 
