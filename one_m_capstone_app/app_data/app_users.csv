@@ -1,0 +1,6 @@
+user_name,user_id,gender,age,job,genres
+evantestuser,7000,28,Male,self-employed,Animation Comedy Fantasy Sci-Fi
+new_test_user,7001,32,Male,K-12 student,Children's Action Musical
+evanh_test,7002,28,Male,self-employed,Action Musical Crime
+helloworldtest,7003,29,Female,K-12 student,Drama Sci-Fi War
+new_user_test,7004,21,Female,K-12 student,Adventure Action Musical
